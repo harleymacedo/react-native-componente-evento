@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>App de Treinamento</Text>
+      <Button 
+        onPress={ () => {alert('Botão pressionado')} } 
+        title="Ligar" 
+      />
+      <Image source={require('./assets/bola-de-futebol-64.png')} />
       <StatusBar style="auto" />
     </View>
   );
